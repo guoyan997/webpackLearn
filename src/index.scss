@@ -1,0 +1,14 @@
+$font-color: #ff0000;
+// 这个是根据参数返回样式
+@mixin border-radius($radius) {
+  border-radius: $radius;
+-ms-border-radius: $radius;
+-moz-border-radius: $radius;
+-webkit-border-radius: $radius;
+};
+// 这个是继承
+%message-common {
+  border: 3px solid #fff000;
+  padding: 10px;
+  color: #333;
+}

@@ -1,0 +1,19 @@
+$design_height: 750;
+$design_width: 1200;
+$fontsize_root: $design_width / 10;
+
+
+@function px2rem($px) {
+  @return $px / $fontsize_root * 1rem;
+}
+@function rem2px ($rem) {
+  @return $rem * $fontsize_root * 1px;
+}
+
+@function px2vh ($px) {
+  @return $px / $design_height * 100vh;
+}
+
+@function px2vw ($px) {
+  @return $px / $design_width * 100vw;
+}
